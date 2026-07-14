@@ -5,12 +5,12 @@ Hospital Management System admin panel UI, built with React + Vite, ready for ba
 ## Module status
 - ✅ Part 1 — Project setup, auth, layout & common components
 - ✅ Part 2 — Dashboard module (stat cards, revenue/appointment/department charts, notifications, quick widgets, search & filter)
-- ⬜ Part 3 — OPD
-- ⬜ Part 4 — IPD
-- ⬜ Part 5 — Pharmacy
-- ⬜ Part 6 — User Management
-- ⬜ Part 7 — Reports & Analytics
-- ⬜ Part 8 — Finalization
+- ✅ Part 3 — OPD
+- ✅ Part 4 — IPD
+- ✅ Part 5 — Pharmacy
+- ✅ Part 6 — User Management
+- ✅ Part 7 — Reports & Analytics
+- ✅ Part 8 — Finalization
 
 ## Branching convention
 Each module is developed on its own branch off `main` (e.g. `feature/dashboard-module`,
@@ -33,8 +33,9 @@ npm run dev      # start dev server
 npm run build    # production build
 ```
 
-Demo login: any email + password works (mocked in `AuthContext`, ready to swap for a real `/auth/login` call in `src/services/api.js`).
-
+Demo login: 
+id: admin@medicore.com
+password: Admin@123
 ## Folder structure
 ```
 src/
@@ -59,10 +60,6 @@ Each module follows the same pattern: page component in `pages/<module>/`, modul
 building blocks in `components/<module>/`, and mock data in `data/<module>Data.js` — so
 swapping mock data for real endpoints later only touches one file per page.
 
-## Design tokens
-- **Colors**: navy (sidebar/auth panel), teal (primary/brand), surface (background),
-  success/warning/danger (status states) — all defined in `src/index.css` under `@theme`.
-- **Type**: Lexend for headings (`font-display`), Inter for body/UI (`font-sans`).
 
 ## Connecting to a real backend
 1. Set `VITE_API_BASE_URL` in a `.env` file.
@@ -72,6 +69,7 @@ swapping mock data for real endpoints later only touches one file per page.
    become available.
 
 ## Responsive behavior
+- mobile responsiveness.
 - Sidebar collapses to an off-canvas drawer below the `lg` breakpoint, toggled from the header.
 - Auth screens hide the left signature panel on small screens.
 - Tables scroll horizontally on narrow viewports.
