@@ -39,7 +39,7 @@ import { UserManagementProvider } from '../context/UserManagementContext';
 import UserListPage from '../pages/user-management/UserListPage';
 import RoleManagementPage from '../pages/user-management/RoleManagementPage';
 import PermissionsManagementPage from '../pages/user-management/PermissionsManagementPage';
-import ProfilePage from '../pages/user-management/ProfilePage';
+
 
 // Reports & Analytics
 import AnalyticsDashboardPage from '../pages/reports-analytics/AnalyticsDashboardPage';
@@ -99,7 +99,6 @@ export default function AppRoutes() {
             <Route path="list" element={<UserListPage />} />
             <Route path="roles" element={<RoleManagementPage />} />
             <Route path="permissions" element={<PermissionsManagementPage />} />
-            <Route path="profile" element={<ProfilePage />} />
           </Route>
 
           {/* Reports & Analytics module */}

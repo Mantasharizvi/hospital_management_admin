@@ -46,7 +46,6 @@ const navItems = [
       { to: '/users/list', label: 'User List (Add User)' },
       { to: '/users/roles', label: 'Role Management' },
       { to: '/users/permissions', label: 'Permissions Management' },
-      { to: '/users/profile', label: 'Profile Page' },
     ],
   },
   {
